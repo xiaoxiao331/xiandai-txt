@@ -4,6 +4,7 @@
 	10.109.134.71  ibs / Hmgc123! hkmc1!
 	/home/ibs/monitoring/tomcat/tomcat8_38001       
 	http://ibsq.hyundaibluelink.com.cn:38001   sadmin accs1234！ daishixiao daishixiao1234！  
+	update TC_MONITORING_USER_MGMT SET EXPR_MDFY_POT= '2022/01/28' WHERE  USER_ID ='sadmin'  --账号到期修改sql
 
 2. svn 账号
 	tmsjx_dsx   / tmsjxdsx1!   
@@ -12,7 +13,8 @@
 	https://10.124.253.26/svn/csm/csmapp
 
 3. 邮箱
-	https://mail.hmgc.com.cn/OWA/  
+	https://mail.hmgc.com.cn/OWA/  daishixiao@hmgc.com.cn
+	https://mail.hmgc.com.cn/owa/
 	daishixiao       daishixiao123！
 
 4. 插件
@@ -66,7 +68,19 @@
 	车辆信息   TESTG80C120200000   12674005334
 	
 10. 工单系统
-	http://10.124.74.3:8003/autoservice/login_tms.do  账号：daishixiao   密码：daishixiao123！
+	http://10.124.74.3:8003/autoservice/login_tms.do  账号：daishixiao   密码：shixiao12！
+
+11. 公告
+	http://10.109.132.138:8084/   sadmin ntc2021！
+
+12. dkc
+	http://10.109.133.145:8081   admin/DKC1!was
+
+
+
+
+
+
 
 	
 //---------------------------------------------------------------------------------	
