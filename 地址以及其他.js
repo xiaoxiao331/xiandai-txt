@@ -66,6 +66,16 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
 	LMS系统
 	LMS  http://10.109.133.221:8080/    账号、密码 admin/admin
 	Kibana  http://10.109.133.221:5601/app/kibana  
+/*  车机开通服务的二维码**/
+https://hmc.hyundaibluelink.com.cn/dlw/qropen/newsvcopen/one.do?iccid=89860919740001683905&cocd=H    基本服务
+
+开通增值服务
+https://hmc.hyundaibluelink.com.cn/dlw/qropen/psvcopen/one.do?iccid=89860920740034718881&cocd=H
+
+DKC dkc
+http://10.109.133.145:8081/com/loginForm.do    admin/DKC1!was
+
+
 
 /**
 	
@@ -222,7 +232,7 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
 	
 	4G信号无法恢复，建议联系经销商检测终端，天线线路，酌情更换终端处理
 	
-/** qq 音乐
+/** qq 音乐  10.109.133.95/10.109.133.94  用户名：hkmc  密码：hkmc1！
 */
 	QQ音乐连接失败问题，请用户reset重启再次测试能否恢复
 	2020/09/29 18:15设备认证通过，可能为终端所在地网络信号覆盖差或是腾讯服务器短暂网络波动导致，请再次确认是否恢复  
@@ -241,6 +251,12 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
 	此问题，如流量确认，新车型确认(不是新车型提示升级车机)
 	现代车联系：孙盛镐  包括投诉
 	起亚联系：闫晋
+	
+	请用户到店学习BLE之后重启终端再次测试
+	核实该用户流量正常添加
+	没有设备认证记录，请用户确认是否学习了BLE,到店学习BLE之后重启终端，再次测试
+	
+	请核实用户是否学习了BLE，到店学习BLE之后再次测试
 
 /**  导航
 */
@@ -278,11 +294,16 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
 	1.该车辆不支持远程座椅加热的功能，车辆有座椅加热功能，但是不支持使用APP远程加热
 	2.该用户看到的APP的加热选项是指后视镜，后挡，方向盘加热
 	
-	终端发生514错误，反馈负责人确认处理中  -- 请用户联系经销商检查BCM,SMK远程启动相关模块是否正常，-- 如没有问题在更换终端处理
+	终端发生514错误，反馈负责人确认处理中  -- 请用户联系经销商检查IBU,BCM,SMK远程启动相关模块是否正常，-- 如没有问题在更换终端处理
 	
 	
 	只用SU2版本1.9其他车型不是这个版本 确认终端版本，1.9以上的，学习ble
 
+
+	出于安全因素的告诉，我们的应用不支持root后的手机安装登录,目前不能登录说明用户手机未能完全恢复越狱前状态，APP仍旧识别为越狱手机
+	请用户确认手机状态，确定完全恢复到越狱前的状态后再次尝试
+	
+	请用户在方便的时间联系我方进行测试
 /**   蓝牙钥匙 注册时二维码无效
 */
 
@@ -295,6 +316,8 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
   更换终端处理
   
   请联系经销商更换终端处理
+  
+  删除/取消 手机蓝牙配对列表中的 “N/A”后，再次使用Bluelink APP 增加登录车辆 ->蓝牙钥匙加入 来扫描车上的蓝牙钥匙注册设备二维码	
   
 /** SOS 问题
 */
@@ -351,7 +374,8 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
 	185开头：联系CU
 	153开头：联系CT
 	133开头：联系CT
-	
+	149开通：联系CT
+	MDN已激活，服务已开通，请用户测试服务是否可以正常使用
 /**  免流量车型 */
 	DN8c(索十 三年免流量)
 	CN7c (三年免流量)
@@ -359,7 +383,8 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
 /**  二手车   CT */
 	MDN空号，联系CT开通处理
 	MDN:15340145650,反馈负责人联系CT开通处理
-	
+	V-B-20210304-36   MDN:15321514853  ESN: 80CCE1E4  // 这种形式发给孙盛镐/群里
+
 	
 /**  BLE ID  全部0 */	
 	问题：经销商表示注册蓝牙提示非有效二维码，首次注册蓝牙钥匙，未登录其他账号，BLEID全部0,已将蓝牙钥匙初始化，并操作reset依旧未恢复
@@ -383,8 +408,8 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
   
 /** 远程  **/
   数据库查询日志 SCENARIO = 'G2RSC-D' 远程启动/ 数据库查询510
-  B-CAN无响应导致远程启动失败，请用户到店检测BCAN/SMK
-  日志显示因为B-CAN无响应导致远程启动失败，请用户到店检测B-CAN/SMK
+  B-CAN无响应导致远程启动失败，请用户到店检测BCAN/SMK/IBU
+  日志显示因为B-CAN无响应导致远程启动失败，请用户到店检测B-CAN/SMK/IBU
   
   数据库查询日志 SCENARIO = 'G2RFC-B' 查找车辆
   
@@ -392,7 +417,9 @@ programcd=MN0307&registerfg=Y&modifyfg=Y&deletefg=Y
   /** 延长 服务*/
   为用户延长一个月服务期限，作为补偿  (其他 --> goodwill)
   
-/** 绑定车辆失败 **/   给高总给ccsp发送邮件
+  461 需要加密下发
+  
+/** 绑定车辆失败 **/   给高总给ccsp发送邮件      联系CCSP进行绑定处理中
 ccsp正式环境bluelink
 vin:      LBECNAFD7LZ003120
 iccid:  89860920740013415111
@@ -420,11 +447,11 @@ gentype:GEN2
   日志报458是因为：终端状态 已经完成停机保号 修改为注册再下发指令   基本DATA-->终端信息问题
   
   
-  G2_Remote Vehicle Status Check (via Smartphone) // 车辆状态  g2_远程车辆状态检查(通过智能手机)   
+  G2_Remote Vehicle Status Check (via Smartphone) // 车辆状态  g2_远程车辆状态检查(通过智能手机)   G2RVS-B
   G2_Send credentials(Phone)  // G2发送凭据(电话)  
   G2_Remote Horn / Light (via Smartphone App) // G2远程喇叭/灯(通过智能手机App)  G2RHL-B
   G2_Remote Light only (via Smartphone App)(Gen2)   // 双闪                      G2RLO-B
-  G2_Find My Car  // G2找到我的车                                  
+  G2_Find My Car  // G2找到我的车                                                G2RFC-B            
   G2_Remote Control Start including Climate control, Window Defroster (via Smartphone App) //g2_远程控制启动，包括气候控制、窗口除霜器(通过智能手机App)  G2RSC-B
   G2_Remote Control Stop (via Smartphone App)  // g2_远程控制停止(通过智能手机App)  G2RSC-I
   G2_Driving Information // G2_Driving信息  车辆上传信息
@@ -432,11 +459,17 @@ gentype:GEN2
   G2_Remote Door Unlock (via Smartphone App) // g2_遥控门锁解锁(通过智能手机App)  G2RDO-B
   
   Remote Start and Climate Control(Phone)   // 远程启动和气候控制(电话)  G2RSC-D
+  Remote Control Stop (via Smartphone App)  // 关闭引擎                  G2RSC-J
   Remote Light only (via Smartphone App)(Gen2)   // 双闪                 G2RLO-D
   Remote Door Unlock (via Smartphone App)   // 解锁                      G2RDO-D
   Remote Door Lock (via Smartphone App)      // 门锁                     G2RDO-I
   Remote Horn / Light (via Smartphone App) // G2远程喇叭/灯              G2RHL-D
+  Find My Car                              // 找到我的车                 G2RFC-B
+  Remote Vehicle Status Check (via Smartphone)// 车辆状态                G2RVS-D/E
+  G2RWO-D  // 开窗 
+  G2RWO-C  // 关窗
   
+  EVC_ Remote FATC On     // 空调
   
   /** 弹框  */
   保留预开通信息(终端注册完毕后自动开通服务)

@@ -1,8 +1,6 @@
 Linux下文件搜索、查找、查看命令{
 
 一、根据 文件或目录名称 搜索
-	find 【搜索目录】【-name或者-iname】【搜索字符】：-name和-iname的区别一个区分大小写，一个不区分大小写
-	eg：在/etc 目录下搜索名字为init的文件或目录
 	①、find /etc -name init (精准搜索，名字必须为 init 才能搜索的到)
 	②、find /etc -iname init (精准搜索，名字必须为 init或者有字母大写也能搜索的到)
 	③、find /etc -name *init (模糊搜索，以 init 结尾的文件或目录名)
@@ -96,17 +94,25 @@ Linux下文件搜索、查找、查看命令{
 	如果是在没有打开文件的前提就用"cat 文件名 | grep "关键字""
 }
 Linux查看进程的4种方法{
-	
 第一种：ps aux
 第二种：ps -elf  ps axms  // 大部分跟第一种一样，PPID为父进程的PID。
 第三种：top   top -Hp PID  //详细
 第四种：pstree -aup 可以带上|grep  查询特定进程。例如 pstree -aup | grep php
- 
+}
+nginx{
+	ps -aux|grep nginx    // 查看nginx 安装
+	./nginx -t # 验证配置文件是否能正常启动
+	./nginx #启动nginx
+	./nginx -s quit #正常停止
+	./nginx -s stop #快速停止
+	./nginx -s reload #重新加载
+	./nginx -V #查看版本信息
+}
+查看日志{
+	taill -f qqauth.log 
 }
 
-
-
-
+df -h  查看磁盘各分区大小
 
 
 
